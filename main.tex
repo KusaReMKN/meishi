@@ -1,0 +1,46 @@
+\pagewidth=91mm\relax\pageheight=55mm
+\hoffset=-1in\relax\voffset=-1in
+\hsize=\pagewidth\relax\vsize=\pageheight
+\input luatexja.sty
+\input graphicx
+\input tikz
+\usetikzlibrary{shadings}
+\newdimen\Q\Q=.25mm
+\jfont\gtrX={Hiragino Kaku Gothic ProN:jfm=ujis} at 10\Q
+\jfont\gtbXX={Hiragino Kaku Gothic ProN/B:jfm=ujis} at 20\Q
+\font\sfrX=cmss8 at 10\Q
+\font\sfbXII=cmssbx10 at 12\Q
+\font\ttrX=cmtt8 at 10\Q
+\font\sfbXVI=cmssbx10 at 16\Q
+\null\vfill
+\hbox to \hsize {\hfill
+  \tikz {
+    \clip (0, 0) circle (14mm);
+    \node at (0, 0) {\includegraphics[width=28mm]{mikan.png}};
+  }
+  \hskip3mm
+  \vbox to 28mm {\vss
+    \hbox{\hskip10\Q\gtrX 大天才美少女プログラミング初心者\hskip10\Q}
+    \vskip5\Q
+    \hbox{\hskip10\Q\gtbXX 上羽　未栞}
+    \hbox{\hskip10\Q\sfrX Mikan UWABA}
+    \vskip10\Q
+    \hrule height .12mm
+    \vskip10\Q
+    \hbox{\hskip10\Q\sfbXII KusaReMKN}
+    \hbox{%
+      \hskip10\Q\lower2\Q\hbox{\includegraphics[width=10\Q]{mail.png}}%
+      \hskip10\Q\ttrX mkn@kusaremkn.com}
+    \vskip-5\Q
+    \hbox{%
+      \hskip10\Q\lower2\Q\hbox{\includegraphics[width=10\Q]{icon.png}}%
+      \hskip10\Q\ttrX https://kusaremkn.com/}
+    \vss}
+  \hfill\null
+}
+\vfill\null
+\eject
+\null\vfill
+\centerline{\sfbXVI Mikan-chan is always watching you...}
+\vfil\null
+\bye
